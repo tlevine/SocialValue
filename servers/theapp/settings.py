@@ -16,7 +16,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(PROJECT_ROOT, "../theapp.sqlite")),
+        'NAME': os.path.join(PROJECT_ROOT, "../theapp.sqlite"),
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -91,8 +91,8 @@ SECRET_KEY = '3^@hk%96ydvc-vje08=fr1t_03%lf6-q0ajqpg7_!gj!8lm^_+'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
+    'django.template.loaders.filesystem.Loader',
 #     'django.template.loaders.eggs.Loader',
 )
 
@@ -124,11 +124,32 @@ INSTALLED_APPS = (
   'django.contrib.admin',
   'django.contrib.admindocs',
 
+  #Libraries
+  'emailconfirmation',
+  'uni_form',
+
+  'allauth',
+  'allauth.account',
+  'allauth.socialaccount',
+  'allauth.twitter',
+  'allauth.openid',
+  'allauth.facebook',
+
   #SocialValue
   'gpg_keychain',
   'gpg_transactions',
   'query_identities',
   'query_archives',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+  'django.contrib.auth.context_processors.auth',
+  "allauth.context_processors.allauth",
+  "allauth.account.context_processors.account",
+)
+
+AUTHENTICATION_BACKENDS = (
+  "allauth.account.auth_backends.AuthenticationBackend",
 )
 
 # A sample logging configuration. The only tangible logging
