@@ -113,16 +113,22 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.sites',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+  'django.contrib.auth',
+  'django.contrib.contenttypes',
+  'django.contrib.sessions',
+  'django.contrib.sites',
+  'django.contrib.messages',
+  'django.contrib.staticfiles',
+
+  #Admin
+  'django.contrib.admin',
+  'django.contrib.admindocs',
+
+  #SocialValue
+  'gpg_keychain',
+  'gpg_transactions',
+  'query_identities',
+  'query_archives',
 )
 
 # A sample logging configuration. The only tangible logging

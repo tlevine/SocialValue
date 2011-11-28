@@ -1,0 +1,1 @@
+This app queries other "theapp" servers' identities API and verifies identities; it depends on the gpg apps.
