@@ -1,0 +1,1 @@
+This app checks whether a particular transaction has been signed by all parties, combines all of the signatures into one JSON and then sends that combined JSON to all of the parties.
