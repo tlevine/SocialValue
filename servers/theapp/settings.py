@@ -107,9 +107,8 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'theapp.urls'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
-    # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+  os.path.join(PROJECT_ROOT, "./templates"),
+  os.path.join(PROJECT_ROOT, "./profiles/templates"),
 )
 
 INSTALLED_APPS = (
@@ -133,7 +132,7 @@ INSTALLED_APPS = (
   'allauth.socialaccount',
   'allauth.twitter',
   'allauth.openid',
-  'allauth.facebook',
+#  'allauth.facebook',
 
   #SocialValue
   'gpg_keychain',
@@ -144,8 +143,10 @@ INSTALLED_APPS = (
 
 TEMPLATE_CONTEXT_PROCESSORS = (
   'django.contrib.auth.context_processors.auth',
+
   "allauth.context_processors.allauth",
   "allauth.account.context_processors.account",
+  'django.core.context_processors.request'
 )
 
 AUTHENTICATION_BACKENDS = (

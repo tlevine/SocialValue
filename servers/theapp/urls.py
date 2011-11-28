@@ -7,6 +7,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
   #Allauth
   url(r'^accounts/', include('allauth.urls')),
+  #Profile
+  url(r'^accounts/profile/$','theapp.profiles.views.profile',name='account-profile'),
 
     # Examples:
     # url(r'^$', 'theapp.views.home', name='home'),
