@@ -133,6 +133,8 @@ INSTALLED_APPS = (
   'allauth.openid',
 #  'allauth.facebook',
 
+  'annoying',
+
   #SocialValue
   'gpg_keychain',
   'gpg_transactions',

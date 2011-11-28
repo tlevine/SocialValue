@@ -1,0 +1,18 @@
+{% extends 'site_base.html' %}
+
+{% block head_title %}Dashboard{% endblock %}
+{% block body %}
+<ul>
+  <li>CRUD</li>
+  <ul>
+    <li>New transaction</li>
+    <li>Edit transaction</li>
+    <li>Sign transaction</li>
+  </ul>
+  <li>History</li>
+  <ul>
+    <li>Archive json display with <a href="https://github.com/AjaxStack/AjaxStack/blob/master/src/jsonreport/jsonreport.js">jsonreport.js</a></li>
+    <li>Sign transactions</li>
+  </ul>
+</ul>
+{% endblock body %}
