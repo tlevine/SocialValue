@@ -1,4 +1,5 @@
-from django.shortcuts import render_to_response
+from annoying.decorators import render_to
 
+@render_to('profile.html')
 def profile(request):
-  return render_to_response('profile.html')
+  return {}

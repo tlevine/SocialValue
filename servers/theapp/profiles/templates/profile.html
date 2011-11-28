@@ -1,1 +1,12 @@
 {% extends 'site_base.html' %}
+{% block body %}
+Username: {{ request.user.username }}
+<ul>
+  <li>Create GPG key</li>
+  <li>Revoke GPG key</li>
+  <li>GPG-sign other things?</li>
+  <li>Configure escrow servers?</li>
+  <li>Add a GPG key</li>
+  <li>Linking</li>
+</ul>
+{% endblock body %}
