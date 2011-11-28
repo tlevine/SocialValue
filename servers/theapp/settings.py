@@ -136,12 +136,12 @@ INSTALLED_APPS = (
   'annoying',
 
   #SocialValue
-  'gpg_keychain',
   'gpg_transactions',
   'query_identities',
   'query_archives',
 
   #theapp
+  'keychain',
   'dashboard',
   'profiles',
 )

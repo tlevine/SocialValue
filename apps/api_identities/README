@@ -1,2 +1,0 @@
-This app provides an HTTP API by which the GPG public key
-associated with a particular username@domain can be found.
