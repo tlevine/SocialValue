@@ -108,7 +108,6 @@ ROOT_URLCONF = 'theapp.urls'
 
 TEMPLATE_DIRS = (
   os.path.join(PROJECT_ROOT, "./templates"),
-  os.path.join(PROJECT_ROOT, "./profiles/templates"),
 )
 
 INSTALLED_APPS = (
@@ -139,6 +138,10 @@ INSTALLED_APPS = (
   'gpg_transactions',
   'query_identities',
   'query_archives',
+
+  #theapp
+  'dashboard',
+  'profiles',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
