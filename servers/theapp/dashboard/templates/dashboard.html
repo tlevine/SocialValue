@@ -2,9 +2,7 @@
 
 {% block head_title %}Dashboard{% endblock %}
 {% block body %}
-<div id="transactions">
-  {{ transactions }}
-</div>
+<div id="transactions"></div>
 
 <h2>To do</h2>
 <ul>
@@ -16,7 +14,7 @@
   </ul>
   <li>History</li>
   <ul>
-    <li>Archive json display with <a href="https://github.com/AjaxStack/AjaxStack/blob/master/src/jsonreport/jsonreport.js">jsonreport.js</a></li>
+    <li>Archive json display with <a href="http://ajaxstack.com/jsonreport/">jsonreport.js</a></li>
     <li>Sign transactions</li>
   </ul>
 </ul>
@@ -24,4 +22,5 @@
 
 {% block footjs %}
 <script type="text/javascript" src="{{ STATIC_URL }}js/jsonreport.js"></script>
+<script type="text/javascript" src="/transactions.js"></script>
 {% endblock footjs %}

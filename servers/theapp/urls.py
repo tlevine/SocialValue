@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
   #Dashboard
-  url(r'^$','theapp.dashboard.views.dashboard',name='dashboard'),
+  url(r'^', include('dashboard.urls')),
 
   #Identity and API for checking identity
   url(r'^accounts/profile/$','theapp.keychain.views.profile',name='account-profile'),

@@ -151,7 +151,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
   "allauth.context_processors.allauth",
   "allauth.account.context_processors.account",
-  'django.core.context_processors.request'
+  'django.core.context_processors.request',
+
+  'django.core.context_processors.static',
 )
 
 AUTHENTICATION_BACKENDS = (
