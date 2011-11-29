@@ -2,6 +2,11 @@
 
 {% block head_title %}Dashboard{% endblock %}
 {% block body %}
+<div id="transactions">
+  {{ transactions }}
+</div>
+
+<h2>To do</h2>
 <ul>
   <li>CRUD</li>
   <ul>
@@ -16,3 +21,7 @@
   </ul>
 </ul>
 {% endblock body %}
+
+{% block footjs %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/jsonreport.js"></script>
+{% endblock footjs %}

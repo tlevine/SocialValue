@@ -7,7 +7,7 @@ class Couch():
     self.couch='http://localhost:5984/socialvalue'
   def query_by_user(self,pk):
     "Query the appropriate couch view."
-    return '[{},{}]'
+    return '[{"foo":"bar"},{"baz":{"haystack":["hay","hay","hay","needle","hay"]}}]'
   def insert(self,docs):
     "Insert bulk_docs."
     pass
