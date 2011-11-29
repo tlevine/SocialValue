@@ -1,25 +1,13 @@
-"Do I want http://packages.python.org/CouchDB/client.html ?"
-from django.contrib.auth.models import User
-from django.db import models
+""" This is a connection to a Couch. Do I maybe want
+http://packages.python.org/CouchDB/client.html or couchdbkit?"""
 
-class Couch(models.Model):
+class Couch():
   "Connection to a Couch"
-  pass
-
-class Archive(models.Model):
-  "A link to a transaction stored in a Couch"
-  couch=models.ForeignKey(Couch)
-  uuid=models.CharField(max_length=100,required=False)
-  owner=models.ForeignKey(User)
-
-  def create(self,json):
-    self.uuid='aoeu'
-    self.update(json)
-
-  def update(self,json):
-    "Update a record"
+  def __init__(self):
+    self.couch='http://localhost:5984/socialvalue'
+  def query_by_user(self,pk):
+    "Query the appropriate couch view."
+    return '[{},{}]'
+  def insert(self,docs):
+    "Insert bulk_docs."
     pass
-
-  def query(self):
-    "Retrieve this record from the database."
-    return {"foo":["bar","baz"]}
