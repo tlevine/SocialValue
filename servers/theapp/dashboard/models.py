@@ -9,5 +9,17 @@ class Couch(models.Model):
 class Archive(models.Model):
   "A link to a transaction stored in a Couch"
   couch=models.ForeignKey(Couch)
-  uuid=models.CharField(max_length=100)
+  uuid=models.CharField(max_length=100,required=False)
   owner=models.ForeignKey(User)
+
+  def create(self,json):
+    self.uuid='aoeu'
+    self.update(json)
+
+  def update(self,json):
+    "Update a record"
+    pass
+
+  def query(self):
+    "Retrieve this record from the database."
+    return {"foo":["bar","baz"]}
