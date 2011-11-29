@@ -9,7 +9,7 @@ urlpatterns = patterns('',
   url(r'^', include('dashboard.urls')),
 
   #Identity and API for checking identity
-  url(r'^accounts/profile/$','theapp.keychain.views.profile',name='account-profile'),
+  url(r'^accounts/profile/$','theapp.profiles.views.profile',name='account-profile'),
   url(r'^who/',include('keychain.urls')),
 
   #Allauth

@@ -21,13 +21,17 @@ def transactions(request):
 @login_required
 def transaction(request,uuid):
   json=c.query_by_uuid(uuid)
-  print json
   jsonp='chainsaw(\'%s\');' % json
-  print jsonp
   return HttpResponse(jsonp,mimetype='text/javascript')
 
 @login_required
 @render_to('edit.html')
 def edit(request,uuid):
   "Edit a transaction."
+  return {"transaction_uuid":uuid}
+
+@login_required
+@render_to('sign.html')
+def sign(request,uuid):
+  "Sign a transaction."
   return {"transaction_uuid":uuid}
