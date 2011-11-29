@@ -11,3 +11,6 @@ class Couch():
   def insert(self,docs):
     "Insert bulk_docs."
     pass
+  def query_by_uuid(self,uuid):
+    "Query the appropriate couch document."
+    return '{"baz":{"haystack":["hay","hay","hay","needle","hay"]}}'

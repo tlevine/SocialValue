@@ -1,0 +1,13 @@
+{% block body %}
+<div id="transaction"></div>
+{% endblock %}
+
+{% block footjs %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/jsonreport.js"></script>
+<script>
+function chainsaw(json){
+  document.getElementById("transaction").innerHTML=_.jsonreport(json);
+}
+</script>
+<script type="text/javascript" src="/transaction/{{transaction_uuid}}.js"></script>
+{% endblock footjs %}

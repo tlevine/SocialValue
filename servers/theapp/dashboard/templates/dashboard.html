@@ -23,5 +23,10 @@
 
 {% block footjs %}
 <script type="text/javascript" src="{{ STATIC_URL }}js/jsonreport.js"></script>
+<script>
+function chainsaw(json){
+  document.getElementById("transactions").innerHTML=_.jsonreport(json);
+}
+</script>
 <script type="text/javascript" src="/transactions.js"></script>
 {% endblock footjs %}
