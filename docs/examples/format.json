@@ -8,15 +8,38 @@
           "publickey":"hasoetnuh"
         , "socialvalue_user":"jim@example.org"
          }]
+      , "conditions":[
+          {"privacy":"May not share this transaction"}
+        ]
       },{
         "publickey":"wnoenueuhrnhrc"
       , "witnesses":[{
           "publickey":"hasoetnuh"
         , "socialvalue_user":"jim@example.org"
          }]
+      , "conditions":[
+          {"privacy":"May share this transaction"}
+        ]
       }]
-    , "exchange":{
-    }
+    , "exchange":[{
+        "from":"oaeushasoetnuh"
+      , "to":"wnoenueuhrnhrc"
+      , "content":[{
+          "type":"money"
+        , "quantity":382
+        , "unit":"USD"
+        , "conditions":"Do not buy pink elephants with the money."
+        }]
+      },{
+        "from":"wnoenueuhrnhrc"
+      , "to":"oaeushasoetnuh"
+      , "content":[{
+          "type":"video editing"
+        , "quantity":3
+        , "unit":"hours"
+        }]
+      }]
+    , "project":"Blue Elephants"
     }
   , "signatures":[{
       "publickey":"hasoetnuh"
@@ -29,5 +52,7 @@
     , "signature":"rchqjrkqjaqjoeuh"
     }]
   }
-  "metadata":
+  "metadata":{
+    "tags":["movie","film","editing"]
+  }
 }
