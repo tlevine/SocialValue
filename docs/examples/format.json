@@ -9,7 +9,7 @@
         , "socialvalue_user":"jim@example.org"
          }]
       , "conditions":[
-          {"privacy":"May not share this transaction"}
+          {"privacy":"May not share this transaction until the film is released"}
         ]
       },{
         "publickey":"wnoenueuhrnhrc"
@@ -28,7 +28,9 @@
           "type":"money"
         , "quantity":382
         , "unit":"USD"
-        , "conditions":"Do not buy pink elephants with the money."
+        , "conditions":[
+            "Do not buy pink elephants with the money."
+          ]
         }]
       },{
         "from":"wnoenueuhrnhrc"
@@ -40,6 +42,7 @@
         }]
       }]
     , "project":"Blue Elephants"
+    , "date":1322690819.501473
     }
   , "signatures":[{
       "publickey":"hasoetnuh"
