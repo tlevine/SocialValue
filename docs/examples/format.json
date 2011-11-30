@@ -1,3 +1,6 @@
+/* If a from or to field is missing, the action is considered a request.
+   List fields as undefined to indicate that it's a proposal that is pending.
+*/
 {
   "data":{
     "action":{
@@ -20,8 +23,7 @@
       , "conditions":[
           {"privacy":"May share this transaction"}
         ]
-      }]
-    , "exchange":[{
+    , "transfers":[{
         "from":["oaeushasoetnuh"]
       , "to":["wnoenueuhrnhrc"]
       , "content":[{
