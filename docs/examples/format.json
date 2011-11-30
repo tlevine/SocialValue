@@ -1,0 +1,33 @@
+{
+  "data":{
+    "action":{
+      "parties":[{
+        "publickey":"oaeushasoetnuh"
+      , "email":"tom@example.com"
+      , "witnesses":[{
+          "publickey":"hasoetnuh"
+        , "socialvalue_user":"jim@example.org"
+         }]
+      },{
+        "publickey":"wnoenueuhrnhrc"
+      , "witnesses":[{
+          "publickey":"hasoetnuh"
+        , "socialvalue_user":"jim@example.org"
+         }]
+      }]
+    , "exchange":{
+    }
+    }
+  , "signatures":[{
+      "publickey":"hasoetnuh"
+    , "signature":"aosetnuhsaonetuh"
+    },{
+      "publickey":"oaeushasoetnuh"
+    , "signature":"oeuhsaonetuh"
+    },{
+      "publickey":"wnoenueuhrnhrc"
+    , "signature":"rchqjrkqjaqjoeuh"
+    }]
+  }
+  "metadata":
+}

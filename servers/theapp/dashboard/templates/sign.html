@@ -1,12 +1,16 @@
 {% block body %}
-<div id="transaction"></div>
+<style>textarea {width: 25%; height: 200px;}</style>
+<textarea id="transaction" readonly></textarea>
+<textarea id="signature" placeholder="Sign the transaction and paste the signature here."></textarea>
+<button class="sign">Sign</button>
 {% endblock %}
 
 {% block footjs %}
-<script type="text/javascript" src="{{ STATIC_URL }}js/jsonreport.js"></script>
+<!--<script type="text/javascript" src="{{ STATIC_URL }}js/jsonreport.js"></script>-->
 <script>
 function chainsaw(json){
-  document.getElementById("transaction").innerHTML=_.jsonreport(json);
+//document.getElementById("transaction").innerHTML=_.jsonreport(json);
+  document.getElementById("transaction").innerHTML=json;
 }
 </script>
 <script type="text/javascript" src="/transaction/{{transaction_uuid}}.js"></script>
