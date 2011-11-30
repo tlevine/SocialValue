@@ -22,8 +22,8 @@
         ]
       }]
     , "exchange":[{
-        "from":"oaeushasoetnuh"
-      , "to":"wnoenueuhrnhrc"
+        "from":["oaeushasoetnuh"]
+      , "to":["wnoenueuhrnhrc"]
       , "content":[{
           "type":"money"
         , "quantity":382
@@ -33,8 +33,8 @@
           ]
         }]
       },{
-        "from":"wnoenueuhrnhrc"
-      , "to":"oaeushasoetnuh"
+        "from":["wnoenueuhrnhrc"]
+      , "to":["oaeushasoetnuh"]
       , "content":[{
           "type":"video editing"
         , "quantity":3
@@ -43,6 +43,7 @@
       }]
     , "project":"Blue Elephants"
     , "date":1322690819.501473
+    , "past_versions":[]
     }
   , "signatures":[{
       "publickey":"hasoetnuh"
