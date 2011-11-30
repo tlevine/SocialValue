@@ -1,5 +1,14 @@
 /* If a from or to field is missing, the action is considered a request.
    List fields as undefined to indicate that it's a proposal that is pending.
+
+   How notorizers work
+   ---
+   Notorizers signs the file with the action and the signature for the parties of note.
+
+
+   How observers work
+   ----
+   Observers are stored in the transaction and sign just like everyone else.
 */
 {
   "data":{
@@ -7,7 +16,7 @@
       "parties":[{
         "publickey":"oaeushasoetnuh"
       , "email":"tom@example.com"
-      , "witnesses":[{
+      , "observers":[{
           "publickey":"hasoetnuh"
         , "socialvalue_user":"jim@example.org"
          }]
@@ -16,7 +25,7 @@
         ]
       },{
         "publickey":"wnoenueuhrnhrc"
-      , "witnesses":[{
+      , "observers":[{
           "publickey":"hasoetnuh"
         , "socialvalue_user":"jim@example.org"
          }]
@@ -53,6 +62,11 @@
     },{
       "publickey":"oaeushasoetnuh"
     , "signature":"oeuhsaonetuh"
+    , "notarizers":[{
+        "publickey":"hrchchbntoetnuh"
+      , "socialvalue_user":"sally@example.net"
+      , "signature":"rchchrchrchmroeuhsaonetuh"
+      }]
     },{
       "publickey":"wnoenueuhrnhrc"
     , "signature":"rchqjrkqjaqjoeuh"
