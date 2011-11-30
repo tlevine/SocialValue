@@ -2,7 +2,14 @@
 
 {% block head_title %}Dashboard{% endblock %}
 {% block body %}
-<h3>Transactions history</h3>
+<h3>Actions</h3>
+<ul>
+  <li class="new"><button>New transaction</button></li>
+  <li class="edit"><input type="text" placeholder="Transaction ID"></input><button>Edit transaction</button></li>
+  <li class="sign"><input type="text" placeholder="Transaction ID"></input><button>Sign transaction</button></li>
+</ul>
+
+<h3>Action History</h3>
 <div id="transactions"></div>
 
 <h3>To do for this page</h3>
@@ -31,4 +38,20 @@ function chainsaw(json){
 }
 </script>
 <script type="text/javascript" src="/transactions.js"></script>
+
+<script>
+$(function(){
+  $('.new button').click(function(){
+    window.location.href="{% url new '' %}";
+  });
+  $('.edit button').click(function(){
+    id=$('.edit input')[0].value;
+    window.location.href="{% url edit '' %}"+id;
+  });
+  $('.sign button').click(function(){
+    id=$('.sign input')[0].value;
+    window.location.href="{% url sign '' %}"+id;
+  });
+});
+</script>
 {% endblock footjs %}
